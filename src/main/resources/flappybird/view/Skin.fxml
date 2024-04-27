@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@Menu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.view.SkinController">
+   <children>
+      <GridPane layoutX="87.0" layoutY="96.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="64.66665649414062" minHeight="10.0" prefHeight="64.66665649414062" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.333343505859375" minHeight="10.0" prefHeight="21.333343505859375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="42.333343505859375" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="86.66665649414062" minHeight="10.0" prefHeight="84.66665649414062" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="42.666656494140625" minHeight="9.333343505859375" prefHeight="11.333343505859375" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="skin1" fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin2" fitHeight="70.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin3" fitHeight="90.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin4" fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin5" fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin6" fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="skin7" fitHeight="75.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/bird_left.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#handleSelect" text="Choose Me!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#handleBack" text="Back" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <Text layoutX="169.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skin Selection">
+         <font>
+            <Font name="Comic Sans MS" size="39.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

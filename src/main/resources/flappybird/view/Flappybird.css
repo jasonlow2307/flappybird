@@ -1,0 +1,23 @@
+/* Button Style */
+.button {
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+    -fx-padding: 6px 12px;
+    -fx-alignment: center;
+}
+
+/* Hover Effect */
+.button:hover {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+/* Pressed Effect */
+.button:pressed {
+    -fx-background-color: #333333;
+}
+

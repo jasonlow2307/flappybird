@@ -1,0 +1,5 @@
+/* Set background image for the AnchorPane */
+.anchor-pane {
+    -fx-background-image: url('/flappybird/image/background.png');
+    -fx-background-size: cover; /* Adjust the image size to cover the AnchorPane */
+}
